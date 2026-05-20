@@ -1,0 +1,376 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #fefaf5;
+    color: #1e1b1a;
+    scroll-behavior: smooth;
+    line-height: 1.5;
+}
+
+/* Open, airy design with lots of whitespace */
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+/* Header / Nav */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 0;
+    flex-wrap: wrap;
+    gap: 1rem;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+
+.logo h1 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    background: linear-gradient(135deg, #2c5f8a, #1e3a5f);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.logo span {
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: #6b4e3a;
+    display: block;
+    letter-spacing: 0;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    font-weight: 500;
+    color: #2d2a28;
+    transition: 0.2s;
+}
+
+.nav-links a:hover {
+    color: #2c5f8a;
+    transform: translateY(-2px);
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    background: #1e3a5f;
+    color: white;
+    padding: 0.8rem 1.8rem;
+    border-radius: 40px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: transform 0.2s ease, background 0.2s;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #0f2c48;
+    transform: translateY(-3px);
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+    padding: 3rem 0 4rem;
+}
+
+.hero-content {
+    flex: 1;
+    animation: fadeInUp 0.7s ease-out;
+}
+
+.hero-content h2 {
+    font-size: 3.2rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+    color: #2c2a28;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    color: #4e3e34;
+    margin-bottom: 2rem;
+}
+
+.hero-image {
+    flex: 1;
+    background: #e9ddd2;
+    border-radius: 2rem;
+    overflow: hidden;
+    box-shadow: 0 20px 35px -12px rgba(0,0,0,0.1);
+    transition: all 0.3s;
+}
+
+.hero-image:hover {
+    transform: scale(1.01);
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+.image-caption {
+    text-align: center;
+    font-size: 0.8rem;
+    color: #8b7a6b;
+    padding: 0.5rem;
+    background: #fff8f0;
+}
+
+/* Section Title */
+.section-title {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin: 3rem 0 1.5rem;
+    text-align: center;
+    letter-spacing: -0.01em;
+}
+
+/* Cards */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.card {
+    background: white;
+    border-radius: 1.5rem;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.02);
+    border: 1px solid #f0e4d8;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 30px -12px rgba(0,0,0,0.1);
+}
+
+.card-img {
+    height: 200px;
+    background: #d9cec2;
+    position: relative;
+    overflow: hidden;
+}
+
+.card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 1.5rem;
+}
+
+.card-content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Maps & Reviews */
+.map-reviews {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin: 3rem 0;
+}
+
+.map-container {
+    flex: 1.2;
+    min-height: 380px;
+    border-radius: 1.5rem;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+    border: 1px solid #ede3d9;
+}
+
+.map-address {
+    padding: 8px 12px;
+    background: #fff;
+    font-size: 0.8rem;
+    border-top: 1px solid #eee;
+}
+
+.reviews-container {
+    flex: 0.9;
+    background: white;
+    border-radius: 1.5rem;
+    padding: 1.5rem;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+    border: 1px solid #ede3d9;
+}
+
+.review-card {
+    border-bottom: 1px solid #f0e4d8;
+    padding: 1rem 0;
+    transition: background 0.2s;
+}
+
+.review-card:hover {
+    background: #fef9f4;
+    padding-left: 0.5rem;
+}
+
+.review-card:last-child {
+    border: none;
+}
+
+.stars {
+    color: #f5b042;
+    letter-spacing: 2px;
+}
+
+.review-text {
+    font-style: italic;
+    margin: 0.5rem 0;
+    color: #2e2a27;
+}
+
+.reviewer {
+    font-weight: 600;
+    font-size: 0.85rem;
+    color: #6b4e3a;
+}
+
+/* Social Media Section */
+.social-section {
+    background: #fffaf5;
+    border-radius: 2rem;
+    padding: 2rem;
+    margin: 2rem 0 3rem;
+    text-align: center;
+}
+
+.social-grid {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-top: 1.5rem;
+}
+
+.social-card {
+    background: white;
+    border-radius: 1.5rem;
+    padding: 1rem;
+    width: 300px;
+    transition: 0.2s;
+    border: 1px solid #eee2d8;
+}
+
+.social-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.social-icon {
+    font-size: 2.2rem;
+    margin-bottom: 0.5rem;
+    color: #1e3a5f;
+}
+
+.insta-feed {
+    background: #faf2ea;
+    border-radius: 1rem;
+    padding: 1rem;
+    font-size: 0.9rem;
+}
+
+.insta-feed a {
+    color: #2c5f8a;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.insta-feed a:hover {
+    text-decoration: underline;
+}
+
+/* Info Card */
+.info-card {
+    background: #fffcf9;
+    border-radius: 2rem;
+    padding: 2rem;
+    margin: 2rem 0;
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    background: #f4ede7;
+    margin-top: 4rem;
+    padding: 2.5rem 0;
+    text-align: center;
+    border-top: 1px solid #e4d8ce;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-on-scroll {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.fade-on-scroll.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .hero-content h2 {
+        font-size: 2.2rem;
+    }
+    
+    .container {
+        padding: 0 1.2rem;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+    }
+}
