@@ -1,0 +1,77 @@
+{
+    "studioName": "Bluebird Tattoo",
+    "location": "Winnipeg, Manitoba, Canada",
+    "established": 2014,
+    "address": "543 Corydon Avenue, Winnipeg, MB R3L 0P3, Canada",
+    "phone": "+1 (204) 555-8228",
+    "email": "hello@bluebirdtattoo.ca",
+    "googleMapsLink": "https://maps.google.com/?q=Bluebird+Tattoo+Winnipeg",
+    "artists": ["Sarah Raven", "Mike Torch", "Luna Chen"],
+    "cards": [
+        {
+            "title": "Professional Atmosphere",
+            "description": "Hygiene and comfort come first. Our rooms are certified to Canadian standards and radiate a warm, welcoming energy.",
+            "imagePlaceholder": "https://placehold.co/500x300/e2d5c9/5a3e2a?text=Tattoo+Workstation"
+        },
+        {
+            "title": "Custom Designs",
+            "description": "From Neo-Traditional to Fine Line – every design is created in close collaboration with you. Your vision, our expertise.",
+            "imagePlaceholder": "https://placehold.co/500x300/e2d5c9/5a3e2a?text=Custom+Designs"
+        },
+        {
+            "title": "Artist Family",
+            "description": "Bluebird is more than a studio – it's a meeting point for tattoo enthusiasts in Winnipeg. Regular guest spots and events.",
+            "imagePlaceholder": "https://placehold.co/500x300/e2d5c9/5a3e2a?text=Community+%26+Art"
+        }
+    ],
+    "openingHours": {
+        "monday_friday": "12:00 – 20:00",
+        "saturday": "11:00 – 18:00",
+        "sunday": "Closed (by appointment only)"
+    },
+    "googleReviews": [
+        {
+            "rating": 5,
+            "text": "Absolutely professional and creative! My two tattoos are perfect artworks. Studio is very clean, great atmosphere.",
+            "author": "Jessica M."
+        },
+        {
+            "rating": 5,
+            "text": "Best experience in Winnipeg. The team listens and gives fantastic advice. Highly recommended!",
+            "author": "Daniel P."
+        },
+        {
+            "rating": 4,
+            "text": "Very friendly artists, fair price. Appointment was on time. Will come back for my next design.",
+            "author": "Sam K."
+        },
+        {
+            "rating": 5,
+            "text": "Incredible detail, super friendly artists. Best shop in Osborne Village!",
+            "author": "Taylor R."
+        }
+    ],
+    "socialMedia": [
+        {
+            "platform": "Instagram",
+            "icon": "fab fa-instagram",
+            "username": "@bluebirdtattoowpg",
+            "link": "https://instagram.com/bluebirdtattoowpg",
+            "description": "Daily flash art, studio updates & live sessions."
+        },
+        {
+            "platform": "Facebook",
+            "icon": "fab fa-facebook",
+            "username": "Bluebird Tattoo Winnipeg",
+            "link": "https://facebook.com/bluebirdtattoowpg",
+            "description": "Events, reviews & artist spotlights."
+        },
+        {
+            "platform": "TikTok",
+            "icon": "fab fa-tiktok",
+            "username": "@bluebird.tattoo",
+            "link": "https://tiktok.com/@bluebird.tattoo",
+            "description": "Healing timelapses & tattooing reels."
+        }
+    ]
+}
